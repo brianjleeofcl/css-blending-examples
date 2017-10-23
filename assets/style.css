@@ -1,0 +1,49 @@
+body {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.background {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.light-background {
+  background: #e2a2bb;
+}
+
+.light-background > * {
+  color: #162556;
+}
+
+.dark-background {
+  background: #162556;
+}
+
+.dark-background > * {
+  color: #e2a2bb;
+}
+
+.white-background {
+  background: #fff;
+}
+
+img, 
+.square {
+  height: 250px;
+  width: 250px;
+}
+
+.blend-multiply {
+  mix-blend-mode: multiply;
+}
+
+.blend-difference img {
+  mix-blend-mode: difference;
+}
+
+.blend-screen {
+  mix-blend-mode: screen;
+}
