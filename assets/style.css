@@ -1,6 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: .5rem 0;
+}
+h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+figure {
+  width: 300px;
+  margin: 15px 0;
+  text-align: center;
+}
+figcaption {
+  margin-top: 5px;
 }
 
 .background {
@@ -14,7 +37,8 @@ body {
   background: #e2a2bb;
 }
 
-.light-background > * {
+.light-background figcaption, 
+.light-background h2 {
   color: #162556;
 }
 
@@ -22,7 +46,8 @@ body {
   background: #162556;
 }
 
-.dark-background > * {
+.dark-background figcaption,
+.dark-background h2 {
   color: #e2a2bb;
 }
 
@@ -30,10 +55,16 @@ body {
   background: #fff;
 }
 
-.square img, 
 .square {
+  padding: 0;
+  margin: 0 auto;
   height: 250px;
   width: 250px;
+  z-index: 0;
+}
+
+.square > img {
+  z-index: 1;
 }
 
 .blend-multiply {

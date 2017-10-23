@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Example use of blending</title>
-  <link rel="stylesheet" href="assets/normalize.css">
+  <link rel="stylesheet" href="assets/reset.css">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <h1>Blend mode demonstration: multiply and screen</h1>
-  <div class="background light-background">
+  <section class="background light-background">
     <h2>Light background</h2>
     <figure class="blend blend-normal">
       <img src="assets/logo.jpg" alt="logo">
@@ -20,25 +20,25 @@
       <img src="assets/logo.jpg" alt="logo">
       <figcaption>multiply blending</caption>
     </figure>
-  </div>
-  <div class="background dark-background">
+  </section>
+  <section class="background dark-background">
     <h2>Dark background</h2>
     <figure class="blend blend-normal">
       <img src="assets/logo.jpg" alt="logo">
       <figcaption>normal blending</caption>
     </figure>
     <figure class="blend blend-difference">
-        <div class="white-background square">
-          <img src="assets/logo.jpg" alt="logo">
-        </div>
-        <figcaption>inverted image (difference blending)</caption>
-      </figure>
+      <div class="white-background square">
+        <img src="assets/logo.jpg" alt="logo">
+      </div>
+      <figcaption>inverted image (difference blending)</caption>
+    </figure>
     <figure class="blend blend-difference blend-screen">
-        <div class="white-background square">
-          <img src="assets/logo.jpg" alt="logo">
-        </div>
-        <figcaption>inverted image + screen blending</caption>
-      </figure>
-  </div>
+      <div class="white-background square">
+        <img src="assets/logo.jpg" alt="logo">
+      </div>
+      <figcaption>inverted image + screen blending</caption>
+    </figure>
+  </section>
 </body>
 </html>
