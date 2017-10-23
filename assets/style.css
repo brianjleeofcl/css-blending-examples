@@ -10,7 +10,6 @@ body {
 h1 {
   font-size: 2rem;
   font-weight: 600;
-  margin: .5rem 0;
 }
 h2 {
   font-size: 1.6rem;
@@ -77,4 +76,35 @@ figcaption {
 
 .blend-screen {
   mix-blend-mode: screen;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: .5rem 0;
+  background: #fff;
+  z-index: 5;
+}
+footer {
+  position: sticky;
+  bottom: 0;
+  padding: 1rem 0;
+  background: #fff;
+  z-index: 5;
+}
+
+footer small {
+  font-size: .7rem;
+}
+
+a {
+  color: #471577;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  font-weight: 400;
 }
